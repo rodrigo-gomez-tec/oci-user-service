@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /oci-microservice
 
-COPY target/*jar oci-microservice.jar
+COPY /target/*jar oci-microservice.jar
 
 COPY /src/main/resources/Wallet_javadev101 /oci-microservice/Wallet_javadev101
 
